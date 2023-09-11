@@ -22,6 +22,6 @@ public class User {
     private String lastName;
 
     @NotBlank(message = "Email is mandatory")
-    @Column(name="email")
+    @Column(unique = true)
     private String email;
 }
